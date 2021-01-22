@@ -1,0 +1,1 @@
+将bert的中文预训练模型的ckpt文件，config文件和vocab文件放在此文件夹内。
