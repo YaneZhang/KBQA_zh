@@ -14,8 +14,8 @@ grpcio-tools 1.32.0
 ### How to run
 首先需要下载bert的中文预训练模型放在chinese_L-12_H-768_A-12文件夹下，[下载地址](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)<br>
 然后，以pipeline模式为例，执行如下命令，训练命名实体识别模型和问答模型：     
-`1. cd qa_pipeline<br>
- 2. sh run_ner.sh<br>
+`1. cd qa_pipeline       
+ 2. sh run_ner.sh       
  3. sh run_qa.sh`<br>
 
 然后，退回到KGMySql.py文件所在目录，在终端中输入python KGMySql.py，将三元组存储到你的mysql数据库，<br>
