@@ -18,7 +18,7 @@ grpcio-tools 1.32.0
 2. sh run_ner.sh
 3. sh run_qa.sh
 
-然后，退回到KGMySql.py文件所在目录，在终端中输入python KGMySql.py, 将三元组存储到你的mysql数据库<br>
+然后，退回到KGMySql.py文件所在目录，在终端中输入python KGMySql.py，将三元组存储到你的mysql数据库，<br>
 接着，在终端中输入以下命令：
 1. cd qa_pipeline
 2. python qa_server.py
