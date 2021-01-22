@@ -13,16 +13,16 @@ grpcio-tools 1.32.0
 
 ### How to run
 首先需要下载bert的中文预训练模型放在chinese_L-12_H-768_A-12文件夹下，[下载地址](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)<br>
-然后，以pipeline模式为例，执行如下命令，训练命名实体识别模型和问答模型：
-`1. cd qa_pipeline
- 2. sh run_ner.sh
- 3. sh run_qa.sh`
+然后，以pipeline模式为例，执行如下命令，训练命名实体识别模型和问答模型：     
+`1. cd qa_pipeline<br>
+ 2. sh run_ner.sh<br>
+ 3. sh run_qa.sh`<br>
 
 然后，退回到KGMySql.py文件所在目录，在终端中输入python KGMySql.py，将三元组存储到你的mysql数据库，<br>
 接着，在终端中输入以下命令：
-`1. cd qa_pipeline`
-`2. python qa_server.py`
-`3. 开启一个新的终端，切换到qa_pipeline目录下，执行python qa_client.py，然后就可以开启一次完美的QA之旅了O(∩_∩)O~~`
+`1. cd qa_pipeline<br>
+ 2. python qa_server.py<br>
+ 3. 开启一个新的终端，切换到qa_pipeline目录下，执行python qa_client.py，然后就可以开启一次完美的QA之旅了O(∩_∩)O~~`<br>
 
 如果想到其他主机上运行客户端，只需要将qa_client.py和qa_pipeline.proto两个文件copy到对应主机，然后开启终端切换到存放两个文件的目录下，运行如下命令(如果没有安装grpc，请先pip install grpcio和grpcio-tools)：<br>
 
