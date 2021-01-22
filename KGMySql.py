@@ -10,7 +10,7 @@ db = 'db'
 connect_info = f'mysql+pymysql://{username}:{password}@{host}/{db}?charset=utf8mb4'
 engine = create_engine(connect_info)
 
-with open("data/kbqa.kb", "r", encoding='utf-8') as f:
+with open("qa_pipeline/data/kbqa.kb", "r", encoding='utf-8') as f:
     lines = f.readlines()
     triples = np.empty([0,3])
     for line in lines:
