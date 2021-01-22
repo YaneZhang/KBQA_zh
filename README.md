@@ -20,7 +20,7 @@ grpcio-tools 1.32.0
 
 然后，退回到KGMySql.py文件所在目录，在终端中输入python KGMySql.py，将三元组存储到你的mysql数据库，<br>
 接着，在终端中输入以下命令：<br>
-`1. cd qa_pipeline`<br>     
+`1. cd qa_pipeline`<br>
 `2. python qa_server.py`<br>
 `3. 开启一个新的终端，切换到qa_pipeline目录下，执行python qa_client.py，然后就可以开启一次完美的QA之旅了O(∩_∩)O~~`<br>
 
