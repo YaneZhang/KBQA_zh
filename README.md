@@ -24,8 +24,8 @@ grpcio-tools 1.32.0
 2. python qa_server.py
 3. 开启一个新的终端，切换到qa_pipeline目录下，执行python qa_client.py，然后就可以开启一次完美的QA之旅了O(∩_∩)O~~
 
-如果想到其他主机上运行客户端，只需要将qa_client.py和qa_pipeline.proto两个文件copy到对应主机，然后开启终端切换到存放两个文件的目录下，运行如下命令(如果没有安装grpc，请先pip install grpcio和grpcio-tools)
-python -m grpc_tools.protoc -I./ --python_out=./ --grpc_python_out=./ ./qa_pipeline.proto
+如果想到其他主机上运行客户端，只需要将qa_client.py和qa_pipeline.proto两个文件copy到对应主机，然后开启终端切换到存放两个文件的目录下，运行如下命令(如果没有安装grpc，请先pip install grpcio和grpcio-tools)<br>
+python -m grpc_tools.protoc -I./ --python_out=./ --grpc_python_out=./ ./qa_pipeline.proto<br>
 然后将qa_client.py文件中请求的IP，改为提供服务的主机的IP即可(运行着qa_server.py程序的主机的IP)。
 
 进一步，如果想用他语言开发客户端，主需要按qa_pipeline.proto的协议，基于grpc开发相应语言的客户端即可。
