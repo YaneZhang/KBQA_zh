@@ -5,11 +5,11 @@
 本项目是一个基于知识三元组的简单的问答系统，分为joint和pipeline两种模式。joint模式为基于bert做意图识别和命名体识别的联合学习训练得到的模型，pipeline模式为单独训练命名实体识别和QA相似度模型。
 
 ### Environment
-tensorflow 1.15
-python 3.6
-pymysql 0.10.1
-grpcio 1.32.0
-grpcio-tools 1.32.0
+tensorflow 1.15     
+python 3.6      
+pymysql 0.10.1       
+grpcio 1.32.0     
+grpcio-tools 1.32.0      
 
 ### How to run
 首先需要下载bert的中文预训练模型放在chinese_L-12_H-768_A-12文件夹下，下载地址https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
