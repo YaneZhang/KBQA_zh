@@ -12,7 +12,7 @@ grpcio 1.32.0
 grpcio-tools 1.32.0      
 
 ### How to run
-首先需要下载bert的中文预训练模型放在chinese_L-12_H-768_A-12文件夹下，下载地址https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
+首先需要下载bert的中文预训练模型放在chinese_L-12_H-768_A-12文件夹下，下载地址https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip<br>
 然后，以pipeline模式为例，执行如下命令，训练命名实体识别模型和问答模型：
 1. cd qa_pipeline
 2. sh run_ner.sh
