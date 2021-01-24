@@ -15,7 +15,7 @@ with open("qa_pipeline/data/kbqa.kb", "r", encoding='utf-8') as f:
     triples = np.empty([0,3])
     for line in lines:
         triple = [i.strip() for i in line.strip().split("|||")]
-        triples = np.append(triples, triple, axis=0)
+        triples = np.append(triples, [triple], axis=0)
 
 triplesDF = pd.DataFrame(triples, columns=["subject", "predicate", "object"])
 triplesDF.to_sql(name='kbqa_triples', con=engine, if_exists='replace', index=False)
